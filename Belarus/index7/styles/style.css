@@ -1,0 +1,14 @@
+.begin {
+    background: linear-gradient(rgba(224, 139, 40, 0.71),rgba(0,0,0,0.5)), url(../img/БП.jpg) center no-repeat;
+    background-size: 100% 150%;
+}
+
+.weather {
+    background-color: rgba(208, 28, 28, 0.32);
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        width: 100% !important;
+    }
+}

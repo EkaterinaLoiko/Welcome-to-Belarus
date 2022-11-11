@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3b60c7ca-686e-4c0b-b0ea-ae4d63ff61f7&lang=ru_RU" type="text/javascript">
+    </script>
+    <meta charset="UTF-8">
+    <title>Discover Belarus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">     
+</head>
+<body>
+    <div class="main-container">
+        <header class="header" id="header"> 
+            <div class="name-header">
+                <div class="discover">
+                    <h2>Welcome to Belarus</h2>
+                </div>
+                <div class="nav-menu">
+                    <a class="nav-menu-item" id="regions-nav" href="#regions">Области</a> 
+                    <a class="nav-menu-item" id="facts-nav" href="#fact"> Факты</a>
+                    <a class="nav-menu-item" href="#registr-btn" id="enter">Войти</a>
+                    <a class="nav-menu-item" href="#registr-btn" id="exit">Выйти</a>
+                    <a class="nav-menu-item" id="maps-nav" href="#map">Карта</a>
+                </div>
+            </div>  
+            <nav role='navigation'>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a class="nav-menu-item" id="regions-nav-brg" href="#regions">Области</a></li>
+                        <li><a class="nav-menu-item" id="facts-nav-brg" href="#fact">Факты</a></li>
+                        <li><a class="nav-menu-item" href="#registr-btn" id="enter-brg">Войти</a></li>
+                        <li><a class="nav-menu-item" href="#registr-btn" id="exit-brg">Выйти</a></li>
+                        <li><a class="nav-menu-item" id="maps-nav-brg" href="#map">Карта</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="intro">
+            <div id="popup" class="popup">
+                <div class="popup-body">
+                    <div class="popup-content">
+                        <h5>Поздравляю, Вы вошли в систему</h5>
+                        <button id="ok">OK</button>
+                    </div>
+                </div> 
+            </div>  
+            <div class="question">
+                <h1><div class="phrase">Думаешь, </div>
+                    <div class="phrase">
+                        <span class="span">ты действительно знаешь Беларусь? </span>
+                    </div> 
+                </h1>
+            </div>            
+            <div class="second-question">
+                <h3> Пришло время познакомиться получше</h3>
+            </div>
+            <div class="registration">
+                <h4 id="h4-registr"> Для просмотра материалов данного сайта необходима регистрация  и вход в систему</h4> 
+                <div class="texts">
+                    <input type="email" class="text-input" placeholder="Введите email" id="email" />
+                    <input type="password" class="text-input" placeholder="Введите пароль" id="password"/>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <button class="registr-btn" id="registr-btn">Регистрация</button>
+                    </div>
+                    <div class="button">
+                        <button class="registr-btn" id="login-btn">Войти</button>
+                    </div>
+                </div>               
+            </div>            
+            <div class="options">
+                <div class="row">
+                    <div class="options-1" id="cards-1">
+                        <div class="cards">
+                            <div class="card-body">
+                                <h5 class="card-title">Знаете ли Вы, что...</h5>
+                                <p class="card-text">Даже если ты из Беларуси и думаешь, что знаешь её полностью, предлагаю все-таки прочитать предложенную информацию</p>
+                                <a href="#fact" class="btn btn-primary">Да, мне интересно</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options-1" id="cards-2">
+                        <div class="cards">
+                            <div class="card-body">
+                                <h5 class="card-title">Карта Беларуси с маршрутами</h5>
+                                <p class="card-text">В метках на карте найдешь краткое описание места. «Геолокация» покажет твое местоположение и места, до которых рукой подать. </p>
+                                <a href="#map" class="btn btn-primary">Перейти </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photos-belarus" id="regions">
+            <div class="container-slider">
+                <div class="sidebar">
+                    <div style="background-image: url('./img/Natalya_Polyakova.jpg');">
+                        <a class="h1" href="index7.html" target="_blank">Могилев</a>
+                        <div class="weather-mogilev">
+                            <div class="temperature-mogilev">  
+                            </div>
+                            <div class="properties">
+                                <div class="wind-mogilev">  
+                                </div>
+                                <div class="humidity-mogilev">
+                                </div>
+                            </div>                            
+                        </div>
+                    </div> 
+                    <div class="city" style="background-image: url('./img/6uTSluUg_-k.jpg');">
+                        <a class="h1" href="index6.html" target="_blank">Витебск</a>
+                        <div class="weather-vitebsk">
+                            <div class="temperature-vitebsk">  
+                            </div>
+                            <div class="properties">
+                                <div class="wind-vitebsk">  
+                                </div>
+                                <div class="humidity-vitebsk">
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="city"  style="background-image: url('./img/kolozhskaya-tserkov-grodno-rassvet.jpg');">
+                        <a class="h1" href="index5.html" target="_blank">Гродно</a>
+                        <div class="weather-grodno">
+                            <div class="temperature-grodno">  
+                            </div>
+                            <div class="properties">
+                                <div class="wind-grodno">  
+                                </div>
+                                <div class="humidity-grodno">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="city"  style="background-image: url('./img/1581711306_d0bcd0bed180d0b4d0b0.jpg');">
+                        <a class="h1" href="index4.html" target="_blank">Брест</a>
+                        <div class="weather-brest">
+                            <div class="temperature-brest">  
+                            </div>
+                            <div class="properties">
+                                <div class="wind-brest">  
+                                </div>
+                                <div class="humidity-brest">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="city"  style="background-image: url('./img/c1b070d219e00d991e0e78853222c704.jpg');">
+                        <a class="h1" href="index3.html " target="_blank">Гомель</a>
+                        <div class="weather-gomel">
+                            <div class="temperature-gomel">  
+                            </div>
+                            <div class="properties">
+                                <div class="wind-gomel">  
+                                </div>
+                                <div class="humidity-gomel">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="city"  style="background-image: url('./img/1614093467_minsk-1.jpg');">
+                        <a class="h1" href="index2.html" target="_blank">Минск</a>
+                        <div class="weather-minsk">
+                            <div class="temperature-minsk">  
+                            </div>
+                            <div class="properties">
+                                <div class="wind-minsk">  
+                                </div>
+                                <div class="humidity-minsk">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slide">
+                    <div class="border" style="background-image: url('./img/mir-2.jpg');">
+                    </div>
+                    <div class="border" style="background-image: url('./img/28679169807_d1a305041e_h.jpg');">
+                    </div>
+                    <div class="border" style=" background-image: url('./img/1626594516196052205.jpg');">
+                    </div>
+                    <div class="border" style="background-image: url('./img/5068db9f06c56ceeac9dd2e3027d3657.jpg');">
+                    </div>
+                    <div class="border" style=" background-image: url('./img/DSC08921_blog.jpg');"></div>
+                    <div class="border" style="background-image: url('./img/mogilev-kostel01.jpg');">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="down-button">
+                       	&darr;
+                    </button>
+                    <button class="up-button">
+                        &uarr;
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="facts-about" id="fact">
+            <h4>Интересно и кратко о Беларуси </h4>
+            <div class="facts">
+                <div class="grid">Беларусь находится в Восточной Европе и благодаря своему положению является буфером между Западной Европой и Россией. По некоторым данным, именно в нашей стране находится географический центр Европы — в 50 километрах от Полоцка (озеро Шо). </div>
+                <div class="grid">Площадь Беларуси — 207 тысяч квадратных километров. На её территории могли бы целиком поместиться Бельгия, Швейцария и Греция. Кстати, Беларусь — самая большая страна Европы, у которой нет выхода к морю.</div>
+                <div class="grid">Беларусь входит в десятку самых лесистых стран Европы — леса занимают 38,8% её территории. Ещё Беларусь называют «лёгкими Европы» — около 30% территории страны занимают болотистые земли.
+            </div>
+                <div class="grid">Многие белорусские достопримечательности представляют собой руины ранее красивейших памятников архитектуры. Однако некоторые из таких руин относятся к категории памятников ЮНЕСКО. Самые посещаемые достопримечательности Беларуси - Несвижский и Мирский замки.</div>
+                <div class="grid">Беларусь — страна стартапов. Знаете ли вы, что здесь были созданы игры World of Tanks, мобильный месенджер Viber, приложение Msqrd и многие другие? Беларусский Парк высоких технологий иногда называют «Кремниевой долиной Восточной Европы». </div>
+                <div class="grid">Беларусь стала родиной предков многих знаменитых людей – от голливудских актрис Лизы Кудроу и Скарлетт Йоханссон до нобелевских лауреатов Жореса Алфёрова, Светланы Алексиевич, хоккеиста Уэйна Гретцки, художника Марка Шагала и многих других.</div>
+                <div class="grid">Считается, что белорусы мало путешествуют, но, видимо, те, кто путешествует, обязательно делает это с шенгенской визой. Тем не менее: по количество полученных виз в страны Шенгенского соглашения белорусы – на первом месте в мире. </div>
+                <div class="grid">Вы могли не знать, но Беларусь одна из самых грамотных стран в мире. Согласно рейтингу ЮНЕСКО), мы занимаем 8-е место с 99,7 процентами грамотных людей среди взрослого населения. Согласно статистике, самые грамотные люди живут в Азербайджане – 100%.</div>
+                <div class="grid">Своеобразной «визиткой» туризма Беларуси стал агротуризм. Он, как и различные спа-комплексы, экотропы, предлагает туристам отдохнуть не только телом, но и душой.</div>
+            </div>
+        </section>
+        <section class="map" id="map">            
+        </section>
+        <section class="comments">
+            <div class="comments-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="text-center">
+                            Поделитесь с другими пользователями интересными и необычными местами в Беларуси. 
+                        </h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="comment-field"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="comment-name">Ваше имя:</label>
+                                <input type="email" class="form-control" id="comment-name"  placeholder="Введите Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-body">Комментарий:</label>
+                                <textarea type="password" class="form-control" id="comment-body" placeholder="Ваш комментарий"></textarea>
+                            </div>
+                            <div class="form-group form-check text-right">
+                                <button type="submit" id="comment-add" class="btn-comment">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer" id="footer">
+            <footer class="text-center text-white" style="background-color: #21081a;">
+                <div class="container p-4"></div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2022 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">Belarus.com</a>
+                </div>
+            </footer>
+        </section>
+        <a class="go-up" href="#header"> &uarr;</a>       
+    </div>
+<script>var typeAnimate = 'slide';</script>
+<script src="js/index.js" type="module"></script> 
+<script src="js/map.js" type="module"></script> 
+</body>
+</html>

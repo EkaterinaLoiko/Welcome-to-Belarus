@@ -1,0 +1,10 @@
+.begin {
+    background: linear-gradient(rgba(23, 41, 181, 0.71),rgba(0,0,0,0.5)), url(../img/ed37ecce3d8cca86caeeb66ed9db3ba4.jpg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        width: 100% !important;
+    }
+}
